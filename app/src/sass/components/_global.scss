@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;    
+    font-family: var(--OpenSans);
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+input{
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    width: 230px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px; 
+    font-family: var(--Poppins);
+    font-weight: 600;   
+    font-size: 15px;
+    background-color: var(--Pink);
+    color: var(--VeryPaleCyan);
+    letter-spacing: 1px;
+    cursor: pointer;
+    &:hover{
+        opacity: .7;
+        transition: opacity .20s;
+    }
+}
+
+.btn.secundary{
+    background-color: var(--White);
+    color: var(--VeryDarkCyan);
+    &:hover{
+        opacity: 1;
+        transition: opacity .20s;
+    }
+}
+
+@mixin flexAllCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
